@@ -4,17 +4,33 @@ version = "0.1.0"
 description = ""
 authors = ["R. Bosschaert"]
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.11"
-pydicom = "^3.0.1"
-matplotlib = "^3.10.0"
-numpy = "^2.2.1"
+#Use Pyside for the GUI
+#Use loguru for logging
+loguru = "^0.7.3"
+#Use pydantic for data validation
 pydantic = "^2.10.4"
+#DICOM IO
+pydicom = "^3.0.1"
+#Matrices
+numpy = "^2.2.1"
+#Visualisation
+matplotlib = "^3.10.0"
+#Advanced imaging toolkits
+simpleitk = "^2.4.0"
+scikit-image = "^0.25.0"
+pillow = "^11.0.0"
+#vtk?
+pyside6-essentials = {version = "^6.8.1.1", python = ">=3.11,<3.14"}
+pyqt6 = "^6.8.0"
 
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.4"
+tox = "^4.23.2"
 
 [build-system]
 requires = ["poetry-core"]
