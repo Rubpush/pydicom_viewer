@@ -19,6 +19,7 @@ poetry install
 `
 poetry run viewer.py
 `
+
 2. To load a dicom series, go to the top left corner of the GUI, click on 'file'
 
 3.  select a folder containing the dicom files of a single series.
